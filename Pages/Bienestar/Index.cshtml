@@ -1,0 +1,45 @@
+@page
+@{ ViewData["Title"] = "Bienestar"; }
+@{
+    // Para agregar un video: pega el ID de YouTube (lo que va después de "v=" en el enlace).
+    var videos = new[]
+    {
+        (Titulo: "Respiración guiada para calmar la ansiedad", Id: "EGO5m_DBzF8"),
+        (Titulo: "Meditación corta de 5 minutos", Id: "LDZQH0Tp4IE"),
+        (Titulo: "Estiramientos para soltar el estrés", Id: "XT9VEY-pra0")
+    };
+}
+@section Scripts { <script src="~/js/bienestar.js" asp-append-version="true"></script> }
+<section class="contenedor">
+    <h1>Bienestar</h1>
+    <p>Pequeños ejercicios para bajar el estrés. Empieza por el de respiración.</p>
+    <div class="card respiracion">
+        <div class="circulo" id="circulo" aria-hidden="true"></div>
+        <p class="estado" id="estadoResp" aria-live="polite">Listo para empezar</p>
+        <button class="btn" id="btnResp" type="button">Empezar a respirar</button>
+    </div>
+    <h2>Otros ejercicios</h2>
+    <div class="grid">
+        <div class="card"><h3>5-4-3-2-1</h3><p>Nombra 5 cosas que ves, 4 que tocas, 3 que oyes, 2 que hueles y 1 que saboreas. Te trae de vuelta al presente.</p></div>
+        <div class="card"><h3>Suelta los hombros</h3><p>Sube los hombros hacia las orejas 5 segundos y suéltalos de golpe. Repite 3 veces.</p></div>
+        <div class="card"><h3>Escríbelo</h3><p>Anota en papel lo que sientes. No lo tienes que enseñar; solo sacarlo de tu cabeza.</p></div>
+    </div>
+    <h2>Videos</h2>
+    <div class="grid">
+        @foreach (var v in videos)
+        {
+            <div class="card">
+                @if (string.IsNullOrWhiteSpace(v.Id))
+                {
+                    <div class="video-vacio">Video próximamente</div>
+                }
+                else
+                {
+                    <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/@v.Id" title="@v.Titulo" loading="lazy" allowfullscreen></iframe></div>
+                }
+                <h3>@v.Titulo</h3>
+            </div>
+        }
+    </div>
+    @* Para agregar videos: <div class="card"><iframe src="URL_DE_YOUTUBE_EMBED" title="Título" allowfullscreen></iframe></div> *@
+</section>

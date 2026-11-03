@@ -1,0 +1,92 @@
+is_global = true
+build_property.TargetFramework = net10.0
+build_property.TargetFrameworkIdentifier = .NETCoreApp
+build_property.TargetFrameworkVersion = v10.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Laika
+build_property.RootNamespace = Laika
+build_property.ProjectDir = C:\Users\getzn\OneDrive\Documentos\Laika\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 10.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\getzn\OneDrive\Documentos\Laika
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 10.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Ayuda/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXl1ZGFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Bienestar/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmllbmVzdGFyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Emociones/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1vY2lvbmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Evaluacion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXZhbHVhY2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Prevencion/Drogas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJldmVuY2lvblxEcm9nYXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Prevencion/Emocional.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJldmVuY2lvblxFbW9jaW9uYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Prevencion/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJldmVuY2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Prevencion/Maestros.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJldmVuY2lvblxNYWVzdHJvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Prevencion/Violencia.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJldmVuY2lvblxWaW9sZW5jaWEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Reporte/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVwb3J0ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Shared/_ChatWidget.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DaGF0V2lkZ2V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/Shared/_Navbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OYXZiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/getzn/OneDrive/Documentos/Laika/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

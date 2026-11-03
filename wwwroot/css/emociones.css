@@ -1,0 +1,8 @@
+.rueda-wrap { display: grid; grid-template-columns: minmax(260px, 420px) 1fr; gap: 2rem; align-items: center; }
+#rueda { width: 100%; height: auto; }
+#rueda path { cursor: pointer; stroke: var(--fondo); stroke-width: 2; transition: transform .2s; transform-origin: center; }
+#rueda path:hover, #rueda path:focus-visible { transform: scale(1.05); outline: none; }
+#rueda path.sel { stroke: var(--texto); stroke-width: 3; }
+#rueda text { font: 600 9px 'Poppins', sans-serif; fill: var(--texto); pointer-events: none; text-anchor: middle; }
+.consejo { min-height: 180px; }
+@media (max-width: 760px) { .rueda-wrap { grid-template-columns: 1fr; } }

@@ -1,0 +1,9 @@
+.pregunta { border: 0; background: #fff; border-radius: var(--radio-grande); box-shadow: var(--sombra); padding: 1.2rem; margin: 0 0 1rem; }
+.pregunta legend { font-weight: 600; padding: 0; margin-bottom: .6rem; float: left; width: 100%; }
+.opciones { clear: both; display: flex; flex-wrap: wrap; gap: .5rem; }
+.opciones label { margin: 0; font-weight: 400; background: var(--fondo); padding: .45rem .9rem; border-radius: 999px; cursor: pointer; }
+.opciones input { accent-color: var(--primario); }
+.opciones label:has(input:checked) { background: rgba(108,99,255,.18); font-weight: 600; }
+.resultado { margin-top: 1.5rem; border-left: 8px solid var(--secundario); }
+.resultado.medio { border-color: var(--alerta); }
+.resultado.alto { border-color: #FF7A7A; }

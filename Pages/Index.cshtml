@@ -1,0 +1,109 @@
+@page
+@{ ViewData["Title"] = "Inicio"; }
+@section Styles { <link rel="stylesheet" href="~/css/inicio.css" asp-append-version="true" /> }
+
+<section class="hero2">
+    <div class="hero2-texto">
+        <h1>Un espacio seguro para hablar, pedir ayuda y sentirte escuchado/a.</h1>
+        <p>Laika es una plataforma anónima para estudiantes y docentes. Aquí puedes entender lo que sientes, evaluarte, reportar lo que pasa sin dar tu nombre y platicar con una compañera virtual cuando lo necesites.</p>
+        <div class="hero-actions">
+            <a class="btn" href="/evaluacion">Hacer la evaluación</a>
+            <a class="btn btn-alerta" href="/reporte">Hacer un reporte anónimo</a>
+        </div>
+        <ul class="garantias">
+            <li>No pedimos tu nombre</li>
+            <li>No guardamos tu IP</li>
+            <li>Gratis y sin registro</li>
+        </ul>
+    </div>
+    <div class="hero2-arte" aria-hidden="true">
+        <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span>
+        <img src="~/img/logo.svg" alt="" width="180" height="180" />
+    </div>
+</section>
+
+<section class="contenedor">
+    <h2>¿Qué es Laika?</h2>
+    <div class="dos-col">
+        <p>Muchas veces es difícil contar lo que pasa en la escuela: burlas, amenazas, presión para probar drogas, violencia o simplemente sentirse mal sin saber por qué. Laika nace para que nadie tenga que cargar con eso solo/a.</p>
+        <p>Es un lugar pensado para estudiantes y también para docentes, porque el bullying no siempre va de alumno a alumno: los maestros también lo viven y merecen apoyo y respeto.</p>
+    </div>
+</section>
+
+<section class="contenedor">
+    <h2>¿Para quién es?</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>🎒 Estudiantes</h3>
+            <p>Si te molestan, te sientes triste o con ansiedad, viste algo que te preocupa o tienes dudas sobre drogas y violencia, aquí puedes pedir ayuda sin que nadie sepa quién eres.</p>
+        </div>
+        <div class="card">
+            <h3>🍎 Docentes</h3>
+            <p>Si sufres burlas, amenazas o faltas de respeto, o notas señales de riesgo en tu grupo, encuentra orientación, un canal de reporte y herramientas para cuidar tu bienestar.</p>
+        </div>
+    </div>
+</section>
+
+<section class="franja">
+    <div class="contenedor">
+        <h2>Cómo funciona</h2>
+        <ol class="pasos">
+            <li><h3>Explora o platica</h3><p>Entra a cualquier sección o abre el chat 💬 y cuéntale a Laika cómo te sientes.</p></li>
+            <li><h3>Evalúate o reporta</h3><p>Responde un test breve o envía un reporte anónimo. Recibirás un código de seguimiento.</p></li>
+            <li><h3>Recibe orientación</h3><p>Obtén recomendaciones, ejercicios y teléfonos de apoyo. Si hay riesgo, te indicamos cómo pedir ayuda ya.</p></li>
+        </ol>
+    </div>
+</section>
+
+<section class="contenedor">
+    <h2>Todo lo que puedes hacer aquí</h2>
+    <div class="grid">
+        <a class="card" href="/ayuda"><h3>🆘 Ayuda</h3><p>Teléfonos de emergencia y apoyo emocional.</p></a>
+        <a class="card" href="/bienestar"><h3>🌿 Bienestar</h3><p>Respiración guiada, ejercicios y videos para calmarte.</p></a>
+        <a class="card" href="/emociones"><h3>🎨 Emociones</h3><p>Una rueda interactiva para ponerle nombre a lo que sientes.</p></a>
+        <a class="card" href="/evaluacion"><h3>📝 Evaluación</h3><p>Un test anónimo de 8 preguntas con recomendaciones.</p></a>
+        <a class="card" href="/prevencion"><h3>🛡️ Prevención</h3><p>Información clara sobre bullying, drogas, violencia y salud emocional.</p></a>
+        <a class="card" href="/reporte"><h3>📣 Reportar</h3><p>Cuenta lo que pasa, sin dar tu nombre, y da seguimiento con un código.</p></a>
+    </div>
+</section>
+
+<section class="contenedor">
+    <h2>Temas que atendemos</h2>
+    <div class="grid temas">
+        <a class="tema" href="/prevencion/maestros"><strong>Bullying hacia maestros</strong><span>Burlas, grabaciones sin permiso, amenazas.</span></a>
+        <a class="tema" href="/prevencion/violencia"><strong>Violencia escolar</strong><span>Insultos, golpes, amenazas y humillaciones.</span></a>
+        <a class="tema" href="/prevencion/drogas"><strong>Drogas y adicciones</strong><span>Alcohol, vapeadores y otras sustancias.</span></a>
+        <a class="tema" href="/prevencion/emocional"><strong>Salud emocional</strong><span>Ansiedad, tristeza, estrés y soledad.</span></a>
+    </div>
+</section>
+
+<section class="contenedor">
+    <div class="banda-ayuda">
+        <div>
+            <h2>¿Estás en peligro o necesitas hablar ahora?</h2>
+            <p>No esperes. Pide ayuda de inmediato.</p>
+        </div>
+        <div class="banda-tels">
+            <span><strong>911</strong> Emergencias</span>
+            <span><strong>800 911 2000</strong> Línea de la Vida</span>
+            <a class="btn" href="/ayuda">Ver más teléfonos</a>
+        </div>
+    </div>
+</section>
+
+<section class="contenedor angosto">
+    <h2>Preguntas frecuentes</h2>
+    <details><summary>¿De verdad es anónimo?</summary><p>Sí. No pedimos nombre, correo ni teléfono, y no guardamos tu IP. En el reporte, solo recibes un código para darle seguimiento.</p></details>
+    <details><summary>¿Quién recibe mi reporte?</summary><p>Los reportes están pensados para llegar a la orientación de la escuela. Cada reporte lleva solo el tipo de situación y lo que tú escribas, nada más.</p></details>
+    <details><summary>¿Laika reemplaza a un psicólogo?</summary><p>No. Laika te acompaña, te orienta y te ayuda a dar el siguiente paso, pero no diagnostica ni sustituye a un profesional. Si lo necesitas, te sugerirá hablar con un adulto de confianza o con una línea de ayuda.</p></details>
+    <details><summary>¿Cuánto cuesta?</summary><p>Nada. Es gratis y no necesitas crear una cuenta.</p></details>
+</section>
+
+<section class="cierre">
+    <h2>Dar el primer paso es lo más difícil, y ya estás aquí.</h2>
+    <p>Empieza por donde te sientas más cómodo/a.</p>
+    <div class="hero-actions">
+        <a class="btn" href="/emociones">Identificar cómo me siento</a>
+        <a class="btn btn-alerta" href="/reporte">Reportar algo</a>
+    </div>
+</section>

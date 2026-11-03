@@ -1,0 +1,15 @@
+@page
+@{ ViewData["Title"] = "Emociones"; }
+@section Styles { <link rel="stylesheet" href="~/css/emociones.css" asp-append-version="true" /> }
+@section Scripts { <script src="~/js/rueda-emociones.js" asp-append-version="true"></script> }
+<section class="contenedor">
+    <h1>Rueda de emociones</h1>
+    <p>Toca el color que mejor describa cómo te sientes.</p>
+    <div class="rueda-wrap">
+        <svg id="rueda" viewBox="-110 -110 220 220" role="group" aria-label="Rueda de emociones"></svg>
+        <div class="card consejo" id="consejo" aria-live="polite">
+            <h3>Elige una emoción</h3>
+            <p>Aquí aparecerá un consejo para ti.</p>
+        </div>
+    </div>
+</section>

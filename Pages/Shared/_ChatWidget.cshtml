@@ -1,0 +1,14 @@
+<button class="chat-fab" id="chatFab" aria-label="Abrir chat con Laika" aria-expanded="false" aria-controls="chatPanel">💬</button>
+<section class="chat-panel" id="chatPanel" aria-label="Chat con Laika" hidden>
+    <header class="chat-head">
+        <strong>🐾 Laika</strong>
+        <button id="chatClose" aria-label="Cerrar chat">✕</button>
+    </header>
+    <div class="chat-log" id="chatLog" aria-live="polite">
+        <div class="msg bot">Hola, soy Laika. Este es un espacio seguro y anónimo. ¿Cómo te sientes hoy?</div>
+    </div>
+    <div class="chat-form">
+        <input id="chatInput" type="text" placeholder="Escribe aquí..." maxlength="500" aria-label="Tu mensaje" autocomplete="off" />
+        <button id="chatSend" class="btn" type="button">Enviar</button>
+    </div>
+</section>

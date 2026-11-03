@@ -1,0 +1,18 @@
+@{
+    var ruta = (Context.Request.Path.Value ?? "/").ToLowerInvariant();
+    string Activo(string r) => ruta.StartsWith(r) ? "activo" : "";
+}
+<header class="navbar">
+    <div class="navbar-inner">
+        <a class="logo" href="/" aria-label="Laika, inicio"><img src="~/img/logo.svg" alt="Laika" height="44" width="44" /></a>
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menú">☰</button>
+        <nav id="navMenu" class="nav-menu" aria-label="Principal">
+            <a class="@Activo("/ayuda")" href="/ayuda">Ayuda</a>
+            <a class="@Activo("/bienestar")" href="/bienestar">Bienestar</a>
+            <a class="@Activo("/emociones")" href="/emociones">Emociones</a>
+            <a class="@Activo("/evaluacion")" href="/evaluacion">Evaluación</a>
+            <a class="@Activo("/prevencion")" href="/prevencion">Prevención</a>
+            <a class="nav-reportar @Activo("/reporte")" href="/reporte">Reportar</a>
+        </nav>
+    </div>
+</header>

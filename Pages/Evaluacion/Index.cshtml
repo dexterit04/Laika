@@ -1,0 +1,38 @@
+@page
+@{
+    ViewData["Title"] = "Evaluación";
+    var preguntas = new[]
+    {
+        "Me he sentido triste o sin ganas de hacer nada.",
+        "Me he sentido nervioso/a o con miedo en la escuela.",
+        "Alguien me ha molestado, insultado o excluido.",
+        "He visto violencia cerca de mí (en la escuela o en casa).",
+        "Me ha costado dormir o concentrarme.",
+        "Siento que no tengo con quién hablar.",
+        "He pensado en usar alcohol, vapeadores u otras sustancias para sentirme mejor.",
+        "He pensado en hacerme daño."
+    };
+    var opciones = new[] { "Nunca", "A veces", "Seguido", "Siempre" };
+}
+@section Styles { <link rel="stylesheet" href="~/css/evaluacion.css" asp-append-version="true" /> }
+@section Scripts { <script src="~/js/evaluacion.js" asp-append-version="true"></script> }
+<section class="contenedor">
+    <h1>Evaluación anónima</h1>
+    <p>Piensa en el último mes. No hay respuestas buenas ni malas, y nadie sabrá que eres tú.</p>
+    <form id="formEval" class="eval-form">
+        @for (var i = 0; i < preguntas.Length; i++)
+        {
+            <fieldset class="pregunta">
+                <legend>@(i + 1). @preguntas[i]</legend>
+                <div class="opciones">
+                    @for (var v = 0; v < opciones.Length; v++)
+                    {
+                        <label><input type="radio" name="p@(i)" value="@v" required /> <span>@opciones[v]</span></label>
+                    }
+                </div>
+            </fieldset>
+        }
+        <button class="btn" type="submit">Ver mi resultado</button>
+    </form>
+    <div id="resultado" class="card resultado" hidden aria-live="polite"></div>
+</section>

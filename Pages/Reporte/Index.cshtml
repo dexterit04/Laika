@@ -1,0 +1,29 @@
+@page
+@{ ViewData["Title"] = "Reportar"; }
+@section Styles { <link rel="stylesheet" href="~/css/reporte.css" asp-append-version="true" /> }
+@section Scripts { <script src="~/js/reporte.js" asp-append-version="true"></script> }
+<section class="contenedor angosto">
+    <h1>Reporte anónimo</h1>
+    <p>No te pedimos nombre, correo ni teléfono. Al enviar, recibirás un código para dar seguimiento.</p>
+    <form id="formReporte" class="card">
+        <label for="tipo">¿Qué está pasando?</label>
+        <select id="tipo" required>
+            <option value="">Elige una opción</option>
+            <option value="bullying-alumno">Bullying hacia un alumno</option>
+            <option value="bullying-maestro">Bullying hacia un maestro</option>
+            <option value="drogas">Consumo o venta de drogas</option>
+            <option value="violencia">Violencia o amenazas</option>
+            <option value="otro">Otro</option>
+        </select>
+        <label for="descripcion">Cuéntanos qué pasó</label>
+        <textarea id="descripcion" rows="6" maxlength="2000" required placeholder="¿Qué pasó? ¿Dónde? ¿Cuándo?"></textarea>
+        <p id="errorRep" class="error" role="alert" hidden></p>
+        <button class="btn btn-alerta" type="submit">Enviar reporte</button>
+    </form>
+    <div id="exitoRep" class="card" hidden aria-live="polite">
+        <h2>Reporte enviado 💜</h2>
+        <p>Guarda este código para dar seguimiento:</p>
+        <p class="codigo" id="codigoRep"></p>
+        <p>Gracias por tu valentía. Si hay peligro inmediato, llama al 911.</p>
+    </div>
+</section>
